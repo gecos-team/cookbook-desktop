@@ -9,6 +9,6 @@ attribute :type, :kind_of => String
 def initialize(*args)
   super
   @action = :set
-  @provider = :gsettings unless :schema.nil?
+  @provider = Chef::Provider::DesktopGsettings unless :schema.nil?
 end
 
