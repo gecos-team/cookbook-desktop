@@ -1,3 +1,10 @@
+def load_current_resource
+  package 'gconf2' do
+    action :nothing
+    not_if "which gconftool-2"
+  end.run_action(:install)
+end
+
 action :set do
   execute "set key" do
     user    new_resource.username
