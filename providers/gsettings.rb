@@ -5,6 +5,7 @@ def load_current_resource
       action :nothing
       not_if "which #{bin}"
     end.run_action(:install)
+  end
 end
 
 action :set do
