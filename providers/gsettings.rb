@@ -1,6 +1,3 @@
-def gsettings
-  "xvfb-run -w 0 gsettings"
-end
 
 action :set do
   execute "set key" do
@@ -16,4 +13,10 @@ action :unset do
     command "#{gsettings} reset #{new_resource.schema} #{new_resource.name}"
   end
   new_resource.updated_by_last_action(true)
+end
+
+private
+
+def gsettings
+  "xvfb-run -w 0 gsettings"
 end
