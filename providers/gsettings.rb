@@ -1,3 +1,11 @@
+def load_current_resource
+  { 'libglib2.0-bin' => 'gsettings',
+    'xvfb'           => 'xvfb-run' }.each do |pkg,bin|
+    package pkg do
+      action :nothing
+      not_if "which #{bin}"
+    end.run_action(:install)
+end
 
 action :set do
   execute "set key" do
