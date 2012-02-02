@@ -83,7 +83,7 @@ Authors:
 * Roberto C. Morano <rcmorano@emergya.com>
 * Juanje Ojeda <juanje.ojeda@gmail.com>
 
-Copyright 2011-2012 Junta de Andalucía
+Copyright 2011-2012 Junta de Andalucía  
 Copyright 2012 Juanje Ojeda <juanje.ojeda@gmail.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
