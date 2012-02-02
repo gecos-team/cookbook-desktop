@@ -24,8 +24,6 @@ action :unset do
   new_resource.updated_by_last_action(true)
 end
 
-private
-
 def gsettings
   "xvfb-run -w 0 gsettings"
 end
