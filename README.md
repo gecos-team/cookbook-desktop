@@ -62,6 +62,18 @@ desktop_settings "picture-uri" do
 end
 ```
 
+But we can use also the `gconf` provider to set the _background_ is this is
+the setting system that use our desktop:
+
+```ruby
+desktop_settings '/desktop/gnome/background/picture_filename' do
+  type     'string'
+  value    node['background']['image']
+  user     node['background']['user']
+  provider 'desktop_gconf'
+end
+```
+
 
 License and Author
 ==================
