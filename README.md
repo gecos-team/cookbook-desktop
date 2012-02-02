@@ -11,7 +11,7 @@ Right now it's just supported **gconf** and **gsettings**, but I hope that more
 desktop settings systems be supported in the future. For example, the one
 used by _KDE_.
 
-This LWRP born as a need for a project called GECOS which is being developed
+This LWRP born as a need for a project called [GECOS](http://forja.guadalinex.org/plugins/mediawiki/index.php?group_id=105) which is being developed
 by the **Junta de Andalucía**, a local government from the lovely region of Spain:
 Andalusia.
 
