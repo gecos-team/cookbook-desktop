@@ -1,5 +1,5 @@
 name              "desktop"
-version           "0.1.0"
+version           "0.1.1"
 maintainer        "Juanje Ojeda"
 maintainer_email  "juanje.ojeda@gmail.com"
 license           "Apache 2.0"
