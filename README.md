@@ -47,12 +47,14 @@ and the current default system for GNOME and GNOME apps.
 If you like to set a specific background to an user you could do something like:
 
 Let's say we have a recipe named `background` with this at the `attributes.rb`:
+
 ```ruby
 defaults['background']['image'] = '/usr/share/background/supecoolbackgroung.jpg'
 defaults['background']['user']  = 'joe'
 ```
 
 And this inside the recipe:
+
 ```ruby
 desktop_settings "picture-uri" do
   schema   "org.gnome.desktop.background"
